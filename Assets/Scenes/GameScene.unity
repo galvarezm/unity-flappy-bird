@@ -238,10 +238,10 @@ RectTransform:
   m_Father: {fileID: 1464831129}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 14.5, y: 131.2}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 90.000015, y: -20.669998}
+  m_SizeDelta: {x: 178.99997, y: 40.330322}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &57454139
 MonoBehaviour:
@@ -295,13 +295,13 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 64
+  m_fontSizeBase: 64
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 2
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -315,7 +315,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_isTextTruncated: 0
@@ -336,7 +336,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 29.363922, w: 9.553955}
+  m_margin: {x: 11.835949, y: 3.6923523, z: 3.2878418, w: -25.077438}
   m_textInfo:
     textComponent: {fileID: 57454139}
     characterCount: 2
@@ -449,13 +449,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 284426157}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.28, y: 0.23, z: -9.95}
+  m_LocalRotation: {x: 0.27364132, y: 0.19217125, z: -0.18627957, w: 0.9238456}
+  m_LocalPosition: {x: -2.236, y: 5.69, z: -7.94}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 35.254, y: 18.058, z: -17.019}
 --- !u!1 &392821259
 GameObject:
   m_ObjectHideFlags: 0
@@ -772,8 +772,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 589610376}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.25, y: 0.25, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.58217, y: 0.25, z: 0}
+  m_LocalScale: {x: 1.4745, y: 1.4745, z: 1.4745}
   m_Children:
   - {fileID: 392821261}
   - {fileID: 17339526}
@@ -1342,9 +1342,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b72e06f595454932ac776a56b508395, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTime: 1
+  maxTime: 1.5
   objObstacle: {fileID: 7220149219468990050, guid: 0355f90ad17c2434da7702927580003d, type: 3}
-  highObstables: 0.5
+  highObstables: 0.3
+  secondsToDestroy: 5
 --- !u!4 &1678119969
 Transform:
   m_ObjectHideFlags: 0
