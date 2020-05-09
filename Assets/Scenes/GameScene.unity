@@ -216,6 +216,7 @@ GameObject:
   - component: {fileID: 57454138}
   - component: {fileID: 57454140}
   - component: {fileID: 57454139}
+  - component: {fileID: 57454141}
   m_Layer: 5
   m_Name: obj_text_score
   m_TagString: Untagged
@@ -360,6 +361,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 57454137}
   m_CullTransparentMesh: 0
+--- !u!114 &57454141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57454137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3988137ebc034b74b97631300953428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &284426157
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,7 +632,7 @@ RectTransform:
   - {fileID: 1537143761}
   - {fileID: 1251527950}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -885,7 +898,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1251527951}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1580421814}
+        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_MethodName: RestartScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1263998827
 GameObject:
   m_ObjectHideFlags: 0
@@ -1053,7 +1078,7 @@ RectTransform:
   m_Children:
   - {fileID: 57454138}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1253,6 +1278,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1580421813}
+  - component: {fileID: 1580421814}
   m_Layer: 0
   m_Name: obj_scene_controller
   m_TagString: Untagged
@@ -1272,8 +1298,21 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1580421814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580421812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e74bd43cf024d878cc8c9965a2c32a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objCanvasGameOver: {fileID: 525421992}
 --- !u!1 &1678119967
 GameObject:
   m_ObjectHideFlags: 0
@@ -1474,7 +1513,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7487f22a91f8f4f2b882fc108a4cdb26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 2.5
+  velocity: 1.8
+  sceneController: {fileID: 1580421814}
 --- !u!1 &1933431829
 GameObject:
   m_ObjectHideFlags: 0
@@ -1591,5 +1631,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
